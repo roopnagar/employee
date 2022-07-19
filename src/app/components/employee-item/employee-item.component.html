@@ -1,0 +1,11 @@
+<div *ngIf="employee" [ngClass]="{reminder: employee.reminder}" class="emp">
+    {{employee.id}}.
+    <h3>{{employee.name}}
+        <!-- <fa-icon [ngStyle]="{color: 'red'}"
+        [icon]="faTimes" 
+        (click)="onDelete(task)"></fa-icon> -->
+        <button type="button" class="btn btn-success" (click)="onDelete(employee)">Delete</button>
+    </h3>
+    <p>{{employee.number}}</p>
+    <p id="rn">{{employee.designation}}</p>
+</div>
